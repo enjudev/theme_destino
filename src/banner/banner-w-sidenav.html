@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goeasyapp</title>
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <section class="my-5">
+        <div class="container grid grid-cols-1 lg:grid-cols-4 gap-4">
+            <div
+                class="lg:w-[270px] divide-y rounded-md overflow-hidden border-[1px] divide-[#DDDDDD] border-[#DDDDDD]">
+                <div class="flex bg-[#EE4047] cursor-pointer">
+                    <h1 class="text-base text-white font-medium uppercase px-4 py-3">Categories</h1>
+                </div>
+                <div class="flex bg-[#F8F8F8] cursor-pointer items-center">
+                    <h1 class="text-base text-[#444444] font-normalh px-4 py-3">Phone & Tablets</h1>
+                    <img class="ml-auto mr-2 w-3 h-3 object-contain" src="../../assets/icon/triangle_right.png" alt="">
+                </div>
+                <div class="flex bg-[#F8F8F8] cursor-pointer items-center">
+                    <h1 class="text-base text-[#444444] font-normalh px-4 py-3">Fashion</h1>
+                    <img class="ml-auto mr-2 w-3 h-3 object-contain" src="../../assets/icon/triangle_right.png" alt="">
+                </div>
+                <div class="flex bg-[#F8F8F8] cursor-pointer items-center">
+                    <h1 class="text-base text-[#444444] font-normalh px-4 py-3">Gifts</h1>
+                    <img class="ml-auto mr-2 w-3 h-3 object-contain" src="../../assets/icon/triangle_right.png" alt="">
+                </div>
+                <div class="flex bg-[#F8F8F8] cursor-pointer items-center">
+                    <h1 class="text-base text-[#444444] font-normalh px-4 py-3">Health & Beauty</h1>
+                    <img class="ml-auto mr-2 w-3 h-3 object-contain" src="../../assets/icon/triangle_right.png" alt="">
+                </div>
+                <div class="flex bg-[#F8F8F8] cursor-pointer items-center">
+                    <h1 class="text-base text-[#444444] font-normalh px-4 py-3">Headphones</h1>
+                    <img class="ml-auto mr-2 w-3 h-3 object-contain" src="../../assets/icon/triangle_right.png" alt="">
+                </div>
+                <div class="flex bg-[#F8F8F8] cursor-pointer">
+                    <h1 class="text-base text-[#444444] font-normalh px-4 py-3">Sport</h1>
+                </div>
+                <div class="flex bg-[#F8F8F8] cursor-pointer">
+                    <h1 class="text-base text-[#444444] font-normalh px-4 py-3">Health & Beauty</h1>
+                </div>
+                <div class="flex bg-[#F8F8F8] cursor-pointer">
+                    <h1 class="text-base text-[#444444] font-normalh px-4 py-3">Toys & Hobbies</h1>
+                </div>
+                <div class="flex bg-[#F8F8F8] cursor-pointer">
+                    <h1 class="text-base text-[#444444] font-normalh px-4 py-3">All Categories</h1>
+                </div>
+            </div>
+            <div class="lg:col-span-3">
+                <div class="swiper banner_swiper h-full rounded-md overflow-hidden">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="w-full h-full object-cover" src="../../assets/banner/banner1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full h-full object-cover" src="../../assets/banner/banner2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full h-full object-cover" src="../../assets/banner/banner3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        var swiper = new Swiper(".banner_swiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>
