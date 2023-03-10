@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <section>
+    <section class="hidden lg:block">
         <div class="bg-[#F8F8F8]">
             <div class="container flex py-3">
                 <div class="flex items-center">
@@ -81,10 +81,45 @@
                     class="rounded-xl bg-primary py-2 px-4 text-sm font-medium uppercase text-white transition hover:bg-white hover:text-primary">
                     Collection
                 </a>
-                <a href="#"
-                    class="rounded-xl bg-primary py-2 px-4 text-sm font-medium uppercase text-white transition hover:bg-white hover:text-primary">
-                    Shop
-                </a>
+                <div
+                    class="group rounded-xl bg-primary py-2 px-4 transition hover:bg-white overflow-hidden hover:overflow-visible">
+                    <a href="#" class="text-sm font-medium uppercase text-white group-hover:text-primary">Shop</a>
+                    <div
+                        class="absolute px-4 py-2 hidden group-hover:grid w-[60vw] left-[20vw] z-10 bg-white drop-shadow-md rounded-lg grid-cols-4 gap-[30px]">
+                        <div>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                        </div>
+                        <div>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                        </div>
+                        <div>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                        </div>
+                        <div>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                            <a href="" class="text-sm tex-black py-2 block px-4">Submenu</a>
+                        </div>
+                    </div>
+                </div>
                 <a href="#"
                     class="rounded-xl bg-primary py-2 px-4 text-sm font-medium uppercase text-white transition hover:bg-white hover:text-primary">
                     About us
@@ -96,8 +131,62 @@
             </div>
         </div>
     </section>
+    <!-- Mobile -->
+    <section class="block lg:hidden">
+        <div class="bg-white flex items-center px-3 py-2 drop-shadow-md py-3">
+            <img class="object-contain w-8 h-8 toggleNav" src="../../assets/icon/menu.png" alt="">
+            <img class="w-[90px] absolute left-[40%] mx-auto aspect-video object-contain"
+                src="../../assets/logo/logo.png" alt="" />
+            <div class="flex items-center ml-auto">
+                <img class="h-[15px] w-[20px] object-cover" src="../../assets/icon/en.png" alt="" />
+                <select class="bg-transparent text-sm focus-visible:outline-none" name="" id="">
+                    <option value="" selected>English</option>
+                    <option value="">Vietnamese</option>
+                </select>
+            </div>
+        </div>
+        <div class="headerMobile top-0 hidden lg:hidden fixed z-10 min-h-full w-screen shadow-lg">
+            <div class="flex lg:hidden fixed z-10 min-h-full w-screen shadow-lg">
+                <div class="w-[260px] bg-white drop-shadow-lg z-10">
+                    <div class="p-4">
+                        <img class="w-[90px] mx-auto aspect-video object-contain" src="../../assets/logo/logo.png"
+                            alt="" />
+                        <div class="flex items-center toggleSubmenu">
+                            <a href="" class="text-sm tex-black block py-2">Shop</a>
+                            <img class="w-5 h-5 ml-auto" src="../../assets/icon/arrow-down.png" alt="">
+                        </div>
+                        <div class="hidden">
+                            <a href="" class="text-sm tex-black block py-2">Submenu</a>
+                            <a href="" class="text-sm tex-black block py-2">Submenu</a>
+                            <a href="" class="text-sm tex-black block py-2">Submenu</a>
+                            <a href="" class="text-sm tex-black block py-2">Submenu</a>
+                        </div>
+                        <div class="flex items-center toggleSubmenu">
+                            <a href="" class="text-sm tex-black block py-2">Blog</a>
+                            <img class="w-5 h-5 ml-auto" src="../../assets/icon/arrow-down.png" alt="">
+                        </div>
+                        <div class="hidden">
+                            <img class="w-full object-contain" src="../../assets/banner/banner1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="closeToggle bg-[#00000066] flex-1" class="flex-1 "></div>
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('.toggleNav').on('click', function () {
+            $('.headerMobile').toggle('fast');
+        });
+        $('.closeToggle').on('click', function () {
+            $('.headerMobile').toggle('fast');
+        })
+        $('.toggleSubmenu').on('click', function () {
+            $(this).next().toggle('fast');
+        });
+    </script>
 </body>
 
 </html>
